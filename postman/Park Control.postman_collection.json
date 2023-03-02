@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "4b8ee17b-7376-4ec8-8798-2dbf7aec6a39",
+		"name": "Park Control",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23484879"
+	},
+	"item": [
+		{
+			"name": "PUT Parking Spot",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"parkingSpotNumber\": \"903A\",\r\n    \"licensePlateCar\": \"REP7R88\",\r\n    \"brandCar\": \"BMW\",\r\n    \"modelCar\": \"X1\",\r\n    \"colorCar\": \"Branco\",\r\n    \"responsibleName\": \"Humberto Tirol\",\r\n    \"apartment\": \"903\",\r\n    \"block\" :\"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking-spot/53d43a62-8d1e-4b37-8dd8-400fe53ee6da",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking-spot",
+						"53d43a62-8d1e-4b37-8dd8-400fe53ee6da"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Parking Spot Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"parkingSpotNumber\": \"903A\",\r\n    \"licensePlateCar\": \"REP7R88\",\r\n    \"brandCar\": \"GM\",\r\n    \"modelCar\": \"Blazer\",\r\n    \"colorCar\": \"Preto\",\r\n    \"responsibleName\": \"Humberto Tirol\",\r\n    \"apartment\": \"903\",\r\n    \"block\" :\"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking-spot",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking-spot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL Parking Spot",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"parkingSpotNumber\": \"205B\",\r\n    \"licensePlateCar\": \"REP7h55\",\r\n    \"brandCar\": \"Hyundai\",\r\n    \"modelCar\": \"HB20S\",\r\n    \"colorCar\": \"Cinza\",\r\n    \"responsibleName\": \"Roberto Carlos\",\r\n    \"apartment\": \"205\",\r\n    \"block\" :\"B\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking-spot?page=0&size=5&sort=registrationDate,ASC",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking-spot"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "5"
+						},
+						{
+							"key": "sort",
+							"value": "registrationDate,ASC"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ONE Parking Spot",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"parkingSpotNumber\": \"205B\",\r\n    \"licensePlateCar\": \"REP7h55\",\r\n    \"brandCar\": \"Hyundai\",\r\n    \"modelCar\": \"HB20S\",\r\n    \"colorCar\": \"Cinza\",\r\n    \"responsibleName\": \"Roberto Carlos\",\r\n    \"apartment\": \"205\",\r\n    \"block\" :\"B\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking-spot/c7c971e6-2d2f-4324-9021-241aaeca4d94",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking-spot",
+						"c7c971e6-2d2f-4324-9021-241aaeca4d94"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Parking Spot",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"parkingSpotNumber\": \"205B\",\r\n    \"licensePlateCar\": \"REP7h55\",\r\n    \"brandCar\": \"Hyundai\",\r\n    \"modelCar\": \"HB20S\",\r\n    \"colorCar\": \"Cinza\",\r\n    \"responsibleName\": \"Roberto Carlos\",\r\n    \"apartment\": \"205\",\r\n    \"block\" :\"B\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking-spot/c7c971e6-2d2f-4324-9021-241aaeca4d94",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking-spot",
+						"c7c971e6-2d2f-4324-9021-241aaeca4d94"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
